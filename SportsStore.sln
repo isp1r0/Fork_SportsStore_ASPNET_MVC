@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.UnitTests", "SportsStore.UnitTests\SportsStore.UnitTests.csproj", "{F40DF1A3-2043-4975-A50A-9A8F399C7C9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AA944A25-C8F2-4509-90FD-142EEBE78E38}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		SportsStore.vsmdi = SportsStore.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Domain", "SportsStore.Domain\SportsStore.Domain.csproj", "{FEA9D606-3AA2-43EC-97F3-480D753D331E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.WebUI", "SportsStore.WebUI\SportsStore.WebUI.csproj", "{08C75FFF-A9C3-4764-8A99-FDFB763A06A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DatabaseScripts", "DatabaseScripts", "{82087E0A-42BD-4305-9A06-FA3F2C18260E}"
+	ProjectSection(SolutionItems) = preProject
+		DatabaseScripts\SportsStoreDatabaseScript.sql = DatabaseScripts\SportsStoreDatabaseScript.sql
+		DatabaseScripts\SportsStoreTableScripts.sql = DatabaseScripts\SportsStoreTableScripts.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs35
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SportsStore.Domain\\SportsStore.Domain.csproj
+		SccProjectName1 = SportsStore.Domain
+		SccLocalPath1 = SportsStore.Domain
+		SccProjectUniqueName2 = SportsStore.UnitTests\\SportsStore.UnitTests.csproj
+		SccProjectName2 = SportsStore.UnitTests
+		SccLocalPath2 = SportsStore.UnitTests
+		SccProjectUniqueName3 = SportsStore.WebUI\\SportsStore.WebUI.csproj
+		SccProjectName3 = SportsStore.WebUI
+		SccLocalPath3 = SportsStore.WebUI
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = SportsStore.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F40DF1A3-2043-4975-A50A-9A8F399C7C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F40DF1A3-2043-4975-A50A-9A8F399C7C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F40DF1A3-2043-4975-A50A-9A8F399C7C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F40DF1A3-2043-4975-A50A-9A8F399C7C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEA9D606-3AA2-43EC-97F3-480D753D331E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA9D606-3AA2-43EC-97F3-480D753D331E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA9D606-3AA2-43EC-97F3-480D753D331E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA9D606-3AA2-43EC-97F3-480D753D331E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08C75FFF-A9C3-4764-8A99-FDFB763A06A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C75FFF-A9C3-4764-8A99-FDFB763A06A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C75FFF-A9C3-4764-8A99-FDFB763A06A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C75FFF-A9C3-4764-8A99-FDFB763A06A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

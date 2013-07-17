@@ -1,0 +1,29 @@
+﻿@model IEnumerable<SportsStore.Domain.Entities.Category>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>All Products</h1>
+<table class="Grid">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var item in Model) {
+        <tr>
+            <td>@item.CategoryId</td>
+            <td>@Html.ActionLink(item.Name, "EditCategory", new { item.CategoryId })</td>
+
+        <td>
+            @using (Html.BeginForm("DeleteCategory", "Admin")) {
+                @Html.Hidden("CategoryID", item.CategoryId)
+                <input type="submit" value="Delete"/>
+            }
+        </td>
+        </tr>
+    }
+</table>
+<p>@Html.ActionLink("Add a new category", "CreateCategory")</p>
