@@ -20,7 +20,7 @@ namespace SportsStore.Domain.Concrete
 
         public void ProcessOrder(Cart cart, ShippingDetails shippingInfo)
         {
-
+            return; //disabling email
             using (var smtpClient = new SmtpClient())
             {
 
