@@ -42,9 +42,45 @@ namespace SportsStore.Domain.Entities
             lineCollection.Clear();
         }
 
-        public IEnumerable<CartLine> Lines
+        /*public List<CartLine> Lines2
         {
-            get { return lineCollection; }
+            get
+            {
+                return new List<CartLine>();    
+            }
+            set
+            {
+                lineCollection = value;
+            }
+            
+        }*/
+        public List<string> Lines2 {get;set;}
+
+        public List<CartLine> Lines
+        { 
+            get
+            {
+                return lineCollection;
+            }
+            /*set
+            {
+                lineCollection = value.ToList();
+            }*/
         }
     }
+
+    public class Cart2
+    {
+        public List<string> Lines2  {get;set;}
+        public List<CartLine1> Lines1{get;set;}
+        public List<CartLine> Lines{get;set;}
+    }
+
+     public class CartLine1
+    {        
+        public int Product  { get; set; }
+        public int Quantity { get; set; }
+    }
+
+    
 }

@@ -42,6 +42,16 @@ namespace SportsStore.WebUI.Controllers
 
         public RedirectToRouteResult AddToCart(Cart cart, int productId, string returnUrl)
         {
+            var modelState1 = ModelState;
+            try
+            {
+                var result = TryUpdateModel(cart);
+            }
+            catch(Exception ex)
+            {
+                var modelState2 = ModelState;    
+            }
+            
             Product product = repository.Products
                 .FirstOrDefault(p => p.ProductID == productId);
 
