@@ -4,3 +4,4 @@ obj
 *.ncrunchsolution
 
 *.trx
+*.suo
